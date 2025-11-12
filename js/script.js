@@ -56,7 +56,7 @@ ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
 /*==================== typed js ====================*/
 const typed = new Typed(".multiple-text", {
-  strings: ["Dosen Pendidikan Matematika", "Web Developer", "Researcher"],
+  strings: ["Lecturer", "Web Developer", "Stock Trader"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
