@@ -223,14 +223,13 @@ span {
 
 .services-container {
   position: relative;
-  width: 1050px;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 100%;
   margin: 0px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap;
-  gap: 2rem; */
+  
 }
 
 .services-container .cards-wrapper {
@@ -238,7 +237,7 @@ span {
   overflow-x: hidden;
   scroll-behavior: smooth;
   padding: 20px 0;
-  width: calc(100% - 100px);
+  width: 100%;
   margin: 0 5px;
   flex-grow: 1;
 }
@@ -258,9 +257,7 @@ span {
 }
 
 .arrow {
-  /* position: absolute; */
   top: 50%;
-  /* height: 40px; */
   flex-shrink: 0;
   background: var(--main-color);
   color: #fff;
