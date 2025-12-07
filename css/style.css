@@ -452,6 +452,148 @@ span {
   color: var(--second-bg-color);
 }
 
+/* === DROPDOWN NAVBAR === */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #1c2736;
+  min-width: 200px;
+  z-index: 100;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 5px;
+  color: #fff;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.dropdown-content a:hover {
+  background: #15e4ff;
+  color: #000;
+}
+
+/* Hover untuk desktop */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Content Article */
+.content-article {
+  text-align: justify;
+  text-indent: 40px;
+}
+
+.quote {
+  text-align: center;
+}
+
+/* Tabel Pada Pembinaan-9 */
+.kepribadian-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.kepribadian-table th,
+.kepribadian-table td {
+    border: 1px solid #000;
+    padding: 8px 10px;
+    vertical-align: top;
+}
+
+.kepribadian-table th {
+    background: var(--main-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.kepribadian-table td:nth-child(1) {
+    text-align: center;
+    width: 40px;
+}
+
+.kepribadian-table td:nth-child(2) {
+    width: 200px;
+    font-weight: bold;
+}
+
+/* Pembinaan-9 Tabel Ciri Profil Kerja */
+.table-container,
+.table-container-kelebihankelemahan {
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan spasi antar border */
+    table-layout: fixed; /* Memastikan lebar kolom sama */
+}
+
+/* Mengatur gaya untuk semua sel (th dan td) */
+th, td {
+    border: 1px solid #000;
+    padding: 15px;
+    vertical-align: top; /* Memastikan konten dimulai dari atas sel */
+}
+
+/* Gaya untuk header (jika diperlukan) */
+thead th {
+    background-color: var(--main-color);
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: none; /* Menghilangkan border bawah header untuk tampilan yang lebih bersih */
+}
+
+/* Gaya untuk teks gaya komunikasi */
+strong {
+    display: block; /* Membuat teks tebal menjadi blok sendiri */
+    margin-bottom: 5px;
+    font-size: 13px;
+    text-decoration: underline; /* Menambahkan garis bawah seperti di gambar */
+}
+
+/* Mengatur gaya daftar (list) */
+ul {
+    list-style: none; /* Menghilangkan bullet default */
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+/* Menambahkan bullet kustom seperti tanda hubung (-) */
+ul li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
 /*BREAKPOINTS*/
 @media (max-width: 1200px) {
   html {
